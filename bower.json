@@ -1,0 +1,17 @@
+{
+  "name": "webshop",
+  "description": "webshop school project",
+  "main": "index.js",
+  "authors": [
+    "samuume <zong0004@edu.eal.dk>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/samuume/webshop",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
