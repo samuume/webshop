@@ -1,0 +1,26 @@
+/*
+stylesheets/
+
+--modules/
+  --all.scss           #include to get all modules
+  --ultility.scss      #module name
+
+--partials/
+  -- _base.scss        #imports for all mixins + global project variables
+  -- _typography.scss  #typography
+  -- _reset.scss       #reset
+
+--vendor/
+  -- _colorpicker.scss #color picker
+
+--main.scss            #primary sass file
+*/
+// Modules and Variables
+@import "partials/base";
+
+// Partials
+@import "partials/reset";
+@import "partials/typography";
+
+// Third-party
+@import "vendor/colorpicker";

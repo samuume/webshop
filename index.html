@@ -3,45 +3,49 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/assets/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="public/assets/stylesheets/main.css">
     <title>Webshop miniproject</title>
   </head>
   <body>
     <header>
-      <div class="top">
-        <h1>supersports</h1>
-        <div class="info-btns">
-          <a>+45 22660077</a>
-          <a>lorem@ipsum.com</a>
-          <a>$99.54 checkout</a>
+      <section class="top">
+        <div class="flex-box">
+          <div class="logo"></div>
+          <div class="info-btns">
+            <button><i class="fa fa-phone" aria-hidden="true"></i> +45 22660077</button>
+            <button>lorem@ipsum.com</button>
+            <button>$99.54 checkout</button>
+          </div>
         </div>
-      </div>
-      <nav>
-        <ul>
-          <li>home</li>
-          <li>men
-            <ul>
-              <li>shoes</li>
-              <li>shirts</li>
-              <li>pants</li>
-              <li>accessories</li>
-            </ul>
-          </li>
-          <li>women</li>
-          <li>kids</li>
-          <li>sale</li>
-          <li>about</li>
-          <li>support</li>
-        </ul>
-        <input type="text" placeholder="Search..." required>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index">home</a></li>
+            <li><a href="#">men</a>
+              <ul>
+                <li><a href="shoes">shoes</a></li>
+                <li><a href="#">shirts</a></li>
+                <li><a href="#">pants</a></li>
+                <li><a href="#">accessories</a></li>
+              </ul>
+            </li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="#">sale</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">support</a></li>
+          </ul>
+          <input type="text" placeholder="Search..." required>
+        </nav>
+      </section>
       <div class="banner" id="frontpage-banner">
 
       </div>
     </header>
     <main>
-      <div class="container">
+      <section class="container">
         <!-- top sales product description with pictures -->
-        <div class="top-sales">
+        <article class="top-sales">
           <div class="sales-1">
             <img src="" alt="">
             <h2>title here</h2>
@@ -57,9 +61,9 @@
             <h2>title here</h2>
             <p>content text here</p>
           </div>
-        </div><!-- top sales end here -->
+        </article><!-- top sales end here -->
         <!-- products -->
-        <div class="products">
+        <article class="products">
           <div class="product">
             <div class="votes"></div>
             <img src="" alt="">
@@ -148,18 +152,18 @@
             </p>
             <button>buy now</button>
           </div><!-- product 8 ends here -->
-        </div><!-- products end here -->
-      </div><!-- container ends here -->
+        </article><!-- products end here -->
+      </section><!-- container ends here -->
     </main>
     <footer>
-      <div class="news-letter">
+      <section class="news-letter">
          <h2>sign up for exclusive sales and product news</h2>
          <form class="signup-form" method="post" action="">
             <input type="text" placeholder="YOUREMAIL@EMAIL.COM" required>
             <input type="submit" value="SIGN UP">
          </form>
-      </div><!-- news letter form ends here -->
-      <div class="footer-links">
+      </section><!-- news letter form ends here -->
+      <section class="footer-links">
         <div class="column-1">
           <h2>our stores</h2>
           <p>Feel free to visit our stores or contact us</p>
@@ -175,8 +179,8 @@
             <a href="">google+ icon</a>
             <a href="">vimeo icon</a>
             <a href="">rss icon</a>
-          </div>
-        </div>
+          </div><!-- social media end here -->
+        </div><!-- col 1 ends here -->
         <div class="column-2">
           <h2>blog posts</h2>
           <p>
@@ -184,7 +188,7 @@
             <span>Title here</span><span>Content text here</span>
             <span>Title here</span><span>Content text here</span>
           </p>
-        </div>
+        </div><!-- col 2 ends here -->
         <div class="column-3">
           <h2>support</h2>
           <ul>
@@ -206,8 +210,8 @@
             <li><a href="#">Site Map</a></li>
             <li><a href="#">Sign up &amp; Save</a></li>
           </ul>
-        </div>
-      </div>
+        </div><!-- col 3 ends here -->
+      </section><!-- footer links end here -->
     </footer>
   </body>
 </html>
