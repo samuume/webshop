@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/samuume/webshop#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.7",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.0",
