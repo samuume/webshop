@@ -9,6 +9,7 @@ stylesheets/
   -- _base.scss        #imports for all mixins + global project variables
   -- _typography.scss  #typography
   -- _reset.scss       #reset
+  -- _buttons.scss     #buttons
 
 --vendor/
   -- _colorpicker.scss #color picker
@@ -21,6 +22,7 @@ stylesheets/
 // Partials
 @import "partials/reset";
 @import "partials/typography";
+@import "partials/buttons";
 
 // Third-party
 @import "vendor/colorpicker";
