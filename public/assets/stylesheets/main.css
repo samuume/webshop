@@ -9,24 +9,52 @@ stylesheets/
   -- _base.scss        #imports for all mixins + global project variables
   -- _typography.scss  #typography
   -- _reset.scss       #reset
+  -- _buttons.scss     #buttons
 
 --vendor/
   -- _colorpicker.scss #color picker
 
 --main.scss            #primary sass file
 */
+/* Global Stylings */
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
-@import url("../public/assets/fonts/font-awesome/scss/font-awesome.scss");
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 1.8em;
+  color: #f45a40; }
+
+h2 {
+  font-size: 1.5em;
+  color: #2a2d34; }
+
+h4 {
+  font-size: 1.1em;
+  color: #363635; }
+
+h5 {
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 400; }
+
+p {
+  line-height: 1.5em; }
+
 a:hover {
   color: #f45a40; }
 
 header {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 80px; }
 
 .top {
   width: 90vw;
-  margin: 0 auto;
-  color: #2a2d34; }
+  margin: 0 auto; }
 
 .flex-box {
   height: 100px;
@@ -41,83 +69,249 @@ header {
   background-image: url("../images/logo.svg");
   background-repeat: no-repeat; }
 
-.info-btns button {
-  border: none;
-  background: none;
-  margin-right: 20px;
-  text-transform: inherit; }
-  .info-btns button:focus {
-    outline: none; }
-  .info-btns button:hover {
-    color: #f45a40;
-    cursor: pointer; }
-  .info-btns button:last-child {
-    width: 220px;
-    height: 32px;
-    background-color: #ededed; }
-
 nav {
   height: 50px;
   display: flex !important;
   justify-content: space-between;
   align-items: center; }
+  nav ul {
+    width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* top nav drop down */ }
+    nav ul ul {
+      min-width: 150px;
+      display: none;
+      position: absolute;
+      color: #ffffff;
+      background-color: #2a2d34;
+      top: 100%;
+      left: 0;
+      padding: 5px 16px; }
+      nav ul ul li {
+        float: none;
+        min-width: 150px; }
+        nav ul ul li a {
+          line-height: 50px;
+          padding: 12px 15px 10px 0;
+          margin-left: 15px; }
+  nav li {
+    position: relative; }
+    nav li:hover > ul {
+      display: block;
+      z-index: 99; }
 
-nav ul {
-  width: 45%;
-  position: relative;
-  display: flex;
-  justify-content: space-between; }
-
-nav ul li {
-  position: relative; }
-
-nav ul ul {
-  min-width: 150px;
-  display: none;
-  position: absolute;
-  color: #ffffff;
-  background-color: #2a2d34;
-  top: 100%;
-  left: 0;
-  padding: 5px 16px; }
-
-nav ul ul li {
-  float: none;
-  min-width: 150px; }
-
-nav ul ul li a {
-  line-height: 50px;
-  padding: 12px 15px 10px 0;
-  margin-left: 15px; }
-
-ul li:hover > ul {
-  display: block; }
-
-.banner {
-  width: 100%;
-  height: 660px;
-  background-image: url("../images/slider/slide-1.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+.search-bar input[type=text] {
+  margin-left: 10px;
+  border: none; }
 
 .container {
   min-width: 90vw !important; }
 
+/* Frontpage */
+/* Landing section */
+.divider {
+  position: relative;
+  border-top: 8px solid #f45a40;
+  height: 2px;
+  z-index: 2; }
+  .divider:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border-top: 3px solid #f45a40;
+    top: 4px;
+    left: 0;
+    padding: 0 50%; }
+
+.slider {
+  width: 100%;
+  height: 84vh;
+  background-image: url("../images/slider/slide-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  display: flex;
+  align-items: center; }
+
+.slider-textbox {
+  width: 800px;
+  height: 350px;
+  padding: 0 4.5vw;
+  background-color: rgba(54, 54, 53, 0.6);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff; }
+
+.slider-heading {
+  color: #ffffff;
+  font-size: 5em; }
+
+/* Category - Top sales section */
+article {
+  max-width: 100%;
+  display: flex !important;
+  justify-content: space-between; }
+
+.category {
+  width: 27vw; }
+  .category h1 {
+    margin: 25px 0; }
+  .category p {
+    width: 80%; }
+
+.category-imgs {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; }
+
+.img1 {
+  background-image: url("../images/topsales/shoes.svg"); }
+
+.img2 {
+  background-image: url("../images/topsales/modern-clothes.svg"); }
+
+.img3 {
+  background-image: url("../images/topsales/accessories.svg"); }
+
+.divide-text {
+  display: flex;
+  width: 50%;
+  margin: 50px auto; }
+  .divide-text hr {
+    width: 200px; }
+
+/* Products section */
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .products .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    margin-bottom: 20px;
+    flex: 0 0 23%;
+    border: 1px solid #ededed; }
+
+.rating {
+  color: #f45a40;
+  margin: 15px 0 0 5px; }
+
+.product-img {
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/products/shoes/jordans/jordan-aj-left.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.product-des {
+  width: 90%;
+  margin: 0 auto; }
+
+.flex-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .flex-items p {
+    margin-bottom: 0;
+    color: #f45a40; }
+
+.icons {
+  display: flex;
+  align-items: center; }
+
+.fa-inverse {
+  font-size: 10px;
+  color: #808080; }
+  .fa-inverse:hover {
+    color: #f45a40; }
+
+footer {
+  margin-top: 30px; }
+
+.news-letter {
+  height: 100px;
+  background-color: #f45a40; }
+  .news-letter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto; }
+  .news-letter h2 {
+    color: #ffffff; }
+  .news-letter input[type=text] {
+    width: 245px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    outline: none; }
+  .news-letter input[type=submit] {
+    width: 100px;
+    height: 40px;
+    background-color: #f56f58;
+    color: #ffffff;
+    border: none;
+    outline: none; }
+    .news-letter input[type=submit]:hover {
+      background-color: #db2a0d; }
+
+.footer-links {
+  background-color: #2a2d34;
+  padding-top: 30px; }
+  .footer-links h2 {
+    color: #ffffff;
+    margin-bottom: 20px; }
+  .footer-links h5 {
+    margin-top: 20px; }
+
+.footer-flexbox {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.socialmedia {
+  color: #ffffff;
+  width: 50%;
+  display: flex;
+  justify-content: space-between; }
+
+.col-md-4 ul {
+  max-height: 50% !important;
+  line-height: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+/* Reset */
 html, body {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif !important;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, span {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  color: #808080; }
+
+main {
+  max-width: 100vw; }
 
 ol, ul {
   padding: 0;
@@ -130,3 +324,45 @@ a {
 
 .container {
   padding: 0; }
+
+/* Styles for all buttons */
+button {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: #ffffff; }
+  button:hover {
+    cursor: pointer;
+    background-color: #db2a0d; }
+  button:focus {
+    outline: none; }
+
+/* Top section links and checkout button */
+.info-btns button {
+  border: none;
+  background: none;
+  margin-right: 20px;
+  color: #808080; }
+  .info-btns button:focus {
+    outline: none; }
+  .info-btns button:hover {
+    color: #f45a40;
+    cursor: pointer; }
+  .info-btns button:last-child {
+    width: 220px;
+    height: 32px;
+    background-color: #ededed; }
+
+/* Call to action buttons */
+.slider-btn,
+.buy-btn {
+  background-color: #f45a40;
+  color: #ffffff; }
+
+.slider-btn {
+  width: 145px;
+  height: 40px; }
+
+.buy-btn {
+  width: 100%;
+  height: 40px; }

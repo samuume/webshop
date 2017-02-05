@@ -14,7 +14,7 @@ gulp.task('serve', ['build-css'], function() {
   browserSync.init({
     proxy: "localhost/webshop"
   });
-  gulp.watch('source/scss/**/*.scss', ['sass']);
+  gulp.watch('source/scss/**/*.scss', ['build-css']);
   gulp.watch('public/*.html').on('change', browserSync.reload);
 });
 gulp.task('watch', ['serve']);
