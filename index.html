@@ -42,12 +42,30 @@
         </nav>
       </section>
       <div class="divider"></div>
-      <div class="slider" id="frontpage-slider">
-          <div class="slider-textbox">
-            <h1 class="slider-heading"><span>right is pink.</span><span>left is blue</span></h1>
-            <p>Inspired by NBA's bold colors and matching up to basketball's on-pitch playmakers, these kicks are ready to stand out.</p>
-            <button class="slider-btn">shop brasil</button>
-          </div>
+      <!-- Boostrap Carousel Slider -->
+      <div class="carousel slide" id="myCarousel" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <!-- Set the first background image using CSS -->
+            </div>
+            <div class="item">
+                <!-- Set the second background image using CSS -->
+            </div>
+            <div class="item">
+                <!-- Set the third background image using CSS -->
+            </div>
+        </div>
+      </div><!-- Slider ends here -->
+      <div class="slider-textbox">
+        <h1 class="slider-heading"><span>right is pink.</span><span>left is blue</span></h1>
+        <p>Inspired by NBA's bold colors and matching up to basketball's on-pitch playmakers, these kicks are ready to stand out.</p>
+        <button class="slider-btn">shop brasil</button>
       </div>
     </header>
     <main>
@@ -367,5 +385,13 @@
         </div><!-- flexbox ends here -->
       </section><!-- footer links end here -->
     </footer>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      $('#myCarousel').carousel({
+        interval: 5000,
+        pause: "false"
+      });
+    </script>
   </body>
 </html>
