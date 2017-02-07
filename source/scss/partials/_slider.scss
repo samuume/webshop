@@ -29,20 +29,26 @@
   height: 100%;
 }
 .item {
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-
   &:nth-child(1) {
-    background: url('../images/slider/slide-1.svg') no-repeat;
+    background: url('../images/slider/slide-1.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
   }
   &:nth-child(2) {
-    background: url('../images/slider/slide-2.svg') no-repeat;
+    background: url('../images/slider/slide-2.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
   }
   &:nth-child(3) {
-    background: url('../images/slider/slide-3.svg') no-repeat;
+    background: url('../images/slider/slide-3.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
   }
 }
 .carousel-indicators {

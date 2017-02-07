@@ -54,6 +54,7 @@ header {
 
 .top {
   width: 90vw;
+  height: 16vh;
   margin: 0 auto; }
 
 .flex-box {
@@ -109,6 +110,86 @@ nav {
 .container {
   min-width: 90vw !important; }
 
+/* Footer */
+footer {
+  margin-top: 30px; }
+
+.news-letter {
+  height: 100px;
+  background-color: #f45a40; }
+  .news-letter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto; }
+  .news-letter h2 {
+    color: #ffffff; }
+  .news-letter input[type=text] {
+    width: 245px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    outline: none; }
+  .news-letter input[type=submit] {
+    width: 100px;
+    height: 40px;
+    background-color: #f56f58;
+    color: #ffffff;
+    border: none;
+    outline: none; }
+    .news-letter input[type=submit]:hover {
+      background-color: #db2a0d; }
+
+.footer-links {
+  background-color: #2a2d34;
+  padding-top: 30px; }
+  .footer-links h2 {
+    color: #ffffff;
+    margin: 20px 0; }
+  .footer-links h5 {
+    margin-top: 20px; }
+
+.footer-flexbox {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.socialmedia {
+  color: #ffffff;
+  width: 50%;
+  display: flex;
+  justify-content: space-between; }
+
+.footer-col {
+  padding-bottom: 20px; }
+  .footer-col:nth-child(n+1) {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    min-height: 1px; }
+  .footer-col:nth-child(3) {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33%;
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 33%;
+    position: relative;
+    width: 100%;
+    min-height: 1px; }
+    .footer-col:nth-child(3) ul {
+      height: 230px !important;
+      line-height: 1.5em;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+
 /* Frontpage */
 /* Landing section */
 .divider {
@@ -146,13 +227,13 @@ article {
   height: 300px; }
 
 .img1 {
-  background-image: url("../images/topsales/shoes.svg"); }
+  background-image: url("../images/topsales/shoes.jpg"); }
 
 .img2 {
-  background-image: url("../images/topsales/modern-clothes.svg"); }
+  background-image: url("../images/topsales/modern-clothes.jpg"); }
 
 .img3 {
-  background-image: url("../images/topsales/accessories.svg"); }
+  background-image: url("../images/topsales/accessories.jpg"); }
 
 .divide-text {
   display: flex;
@@ -183,7 +264,7 @@ article {
 .product-img {
   width: 100%;
   height: 250px;
-  background-image: url("../images/products/shoes/jordans/jordan-aj-left.svg");
+  background-image: url("../images/products/shoes/jordans/jordan-aj-left.png");
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -208,65 +289,6 @@ article {
   color: #808080; }
   .fa-inverse:hover {
     color: #f45a40; }
-
-footer {
-  margin-top: 30px; }
-
-.news-letter {
-  height: 100px;
-  background-color: #f45a40; }
-  .news-letter div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90vw;
-    height: 100%;
-    margin: 0 auto; }
-  .news-letter h2 {
-    color: #ffffff; }
-  .news-letter input[type=text] {
-    width: 245px;
-    height: 40px;
-    padding: 5px;
-    border: none;
-    outline: none; }
-  .news-letter input[type=submit] {
-    width: 100px;
-    height: 40px;
-    background-color: #f56f58;
-    color: #ffffff;
-    border: none;
-    outline: none; }
-    .news-letter input[type=submit]:hover {
-      background-color: #db2a0d; }
-
-.footer-links {
-  background-color: #2a2d34;
-  padding-top: 30px; }
-  .footer-links h2 {
-    color: #ffffff;
-    margin-bottom: 20px; }
-  .footer-links h5 {
-    margin-top: 20px; }
-
-.footer-flexbox {
-  width: 90vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between; }
-
-.socialmedia {
-  color: #ffffff;
-  width: 50%;
-  display: flex;
-  justify-content: space-between; }
-
-.col-md-4 ul {
-  max-height: 50% !important;
-  line-height: 1.5em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; }
 
 /* Reset */
 html, body {
@@ -372,18 +394,26 @@ button {
   width: 100%;
   height: 100%; }
 
-.item {
-  background-position: center;
+.item:nth-child(1) {
+  background: url("../images/slider/slide-1.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
-  .item:nth-child(1) {
-    background: url("../images/slider/slide-1.svg") no-repeat; }
-  .item:nth-child(2) {
-    background: url("../images/slider/slide-2.svg") no-repeat; }
-  .item:nth-child(3) {
-    background: url("../images/slider/slide-3.svg") no-repeat; }
+
+.item:nth-child(2) {
+  background: url("../images/slider/slide-2.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.item:nth-child(3) {
+  background: url("../images/slider/slide-3.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 .carousel-indicators {
   top: 65vh; }
