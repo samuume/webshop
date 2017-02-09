@@ -14,10 +14,13 @@ button {
   }
 }
 /* Top section links and checkout button */
+.info-btns {
+  padding-right: 0;
+}
 .info-btns button {
+  margin-top: 10px;
   border: none;
   background: none;
-  margin-right: 20px;
   color: $bread-text-color;
   &:focus {
     outline: none;
@@ -27,8 +30,8 @@ button {
     cursor: pointer;
   }
   &:last-child {
-    width: 220px;
     height: 32px;
+    margin-bottom: 10px;
     background-color: $grey;
   }
 }
@@ -45,4 +48,14 @@ button {
 .buy-btn {
   width: 100%;
   height: 40px;
+}
+@media (min-width: 768px) {
+  .info-btns {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+  }
+  .info-btns button {
+    margin-top: 0;
+  }
 }

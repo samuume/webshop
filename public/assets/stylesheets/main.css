@@ -46,69 +46,43 @@ p {
   line-height: 1.5em; }
 
 a:hover {
-  color: #f45a40; }
+  color: #f45a40 !important; }
 
 header {
   text-transform: uppercase;
   margin-bottom: 80px; }
 
-.top {
-  width: 90vw;
-  height: 16vh;
-  margin: 0 auto; }
-
-.flex-box {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.row {
+  z-index: 1;
+  margin: 10px 0;
   border-bottom: 1px solid #2a2d34; }
 
 .logo {
-  width: 30%;
   height: 30px;
+  margin: 20px 0;
   background-image: url("../images/logo.svg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
-nav {
-  height: 50px;
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center; }
-  nav ul {
-    width: 45%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    /* top nav drop down */ }
-    nav ul ul {
-      min-width: 150px;
-      display: none;
-      position: absolute;
-      color: #ffffff;
-      background-color: #2a2d34;
-      top: 100%;
-      left: 0;
-      padding: 5px 16px; }
-      nav ul ul li {
-        float: none;
-        min-width: 150px; }
-        nav ul ul li a {
-          line-height: 50px;
-          padding: 12px 15px 10px 0;
-          margin-left: 15px; }
-  nav li {
-    position: relative; }
-    nav li:hover > ul {
-      display: block;
-      z-index: 99; }
+.navbar {
+  border: none;
+  background: none; }
+  .navbar .navbar-toggle {
+    background-color: #f45a40;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #ffffff; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+      background-color: #f45a40; }
+  .navbar .navbar-nav {
+    background-color: #ededed; }
 
-.search-bar input[type=text] {
+.searchbar {
   margin-left: 10px;
   border: none; }
-
-.container {
-  min-width: 90vw !important; }
 
 /* Footer */
 footer {
@@ -208,11 +182,6 @@ footer {
     padding: 0 50%; }
 
 /* Category - Top sales section */
-article {
-  max-width: 100%;
-  display: flex !important;
-  justify-content: space-between; }
-
 .category {
   width: 27vw; }
   .category h1 {
@@ -224,7 +193,7 @@ article {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 300px; }
+  height: 222px; }
 
 .img1 {
   background-image: url("../images/topsales/shoes.jpg"); }
@@ -235,27 +204,24 @@ article {
 .img3 {
   background-image: url("../images/topsales/accessories.jpg"); }
 
+.image-1 {
+  padding-left: 0; }
+
+.image-3 {
+  padding-right: 0; }
+
 .divide-text {
   display: flex;
-  width: 50%;
+  align-items: center;
   margin: 50px auto; }
   .divide-text hr {
     width: 200px; }
+  .divide-text h2 {
+    margin: 0; }
 
 /* Products section */
-.products {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .products .product {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 600px;
-    margin-bottom: 20px;
-    flex: 0 0 23%;
-    border: 1px solid #ededed; }
+.product {
+  border: 1px solid #ededed; }
 
 .rating {
   color: #f45a40;
@@ -290,6 +256,40 @@ article {
   .fa-inverse:hover {
     color: #f45a40; }
 
+@media (min-width: 768px) {
+  .row {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .navbar-collapse {
+    padding: 0 !important; }
+  .navbar-nav {
+    background-color: transparent !important; }
+  .nav > li > a {
+    padding: 20px 35px 10px 0 !important; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #f45a40; }
+  .logo {
+    background-position: left; }
+  .form-control {
+    padding: 0 5px !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important; }
+    .form-control:focus {
+      color: #f45a40;
+      border: 1px solid #f45a40 !important; }
+  .topsale {
+    display: flex !important;
+    justify-content: space-between; }
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; } }
+
 /* Reset */
 html, body {
   margin: 0;
@@ -310,17 +310,14 @@ body {
 main {
   max-width: 100vw; }
 
-ol, ul {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-
 a {
-  text-decoration: none;
   color: inherit; }
 
-.container {
+.container-fluid {
   padding: 0; }
+
+.nopadding {
+  padding: 0 !important; }
 
 /* Styles for all buttons */
 button {
@@ -335,10 +332,13 @@ button {
     outline: none; }
 
 /* Top section links and checkout button */
+.info-btns {
+  padding-right: 0; }
+
 .info-btns button {
+  margin-top: 10px;
   border: none;
   background: none;
-  margin-right: 20px;
   color: #808080; }
   .info-btns button:focus {
     outline: none; }
@@ -346,8 +346,8 @@ button {
     color: #f45a40;
     cursor: pointer; }
   .info-btns button:last-child {
-    width: 220px;
     height: 32px;
+    margin-bottom: 10px;
     background-color: #ededed; }
 
 /* Call to action buttons */
@@ -364,30 +364,24 @@ button {
   width: 100%;
   height: 40px; }
 
+@media (min-width: 768px) {
+  .info-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .info-btns button {
+    margin-top: 0; } }
+
 /* Custom styling for slider */
 .slider-textbox {
-  width: 800px;
-  height: 350px;
-  padding: 0 4.5vw;
-  background-color: rgba(54, 54, 53, 0.6);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: #ffffff;
-  top: 35vh;
-  position: absolute;
-  z-index: 99; }
+  display: none; }
 
 .slider-heading {
   color: #ffffff;
   font-size: 5em; }
 
 .carousel {
-  width: 100%;
-  height: 84vh !important;
-  z-index: 0;
-  position: relative;
-  display: flex; }
+  display: none; }
 
 .item,
 .active {
@@ -415,10 +409,24 @@ button {
   background-size: cover;
   -o-background-size: cover; }
 
-.carousel-indicators {
-  top: 65vh; }
-  .carousel-indicators li {
-    max-width: 15px;
-    height: 15px;
-    margin-right: 10px !important;
-    border-radius: 50%; }
+@media (min-width: 768px) {
+  .carousel {
+    display: block;
+    height: 80vh;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    display: flex; }
+  .slider-textbox {
+    width: 800px;
+    height: 350px;
+    padding: 0 4.5vw;
+    background-color: rgba(54, 54, 53, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    top: 20vh;
+    position: absolute;
+    z-index: 99;
+    left: 0; } }

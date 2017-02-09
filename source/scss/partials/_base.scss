@@ -51,75 +51,46 @@ p {
   line-height: $base-font-line-height;
 }
 a:hover {
-  color: $primary-color;
+  color: $primary-color !important;
 }
 header {
   text-transform: uppercase;
   margin-bottom: 80px;
 }
-.top {
-  width: 90vw;
-  height: 16vh;
-  margin: 0 auto;
-}
-.flex-box {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.row {
+  z-index: 1;
+  margin: 10px 0;
   border-bottom: 1px solid $secondary-color;
 }
 .logo {
-  width: 30%;
   height: 30px;
+  margin: 20px 0;
   background-image: url('../images/logo.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
-nav {
-  height: 50px;
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-  ul {
-    width: 45%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    /* top nav drop down */
-    ul {
-      min-width: 150px;
-      display: none;
-      position: absolute;
-      color: $white;
-      background-color: $secondary-color;
-      top: 100%;
-      left: 0;
-      padding: 5px 16px;
-      li {
-        float: none;
-        min-width: 150px;
-        a {
-          line-height: 50px;
-          padding: 12px 15px 10px 0;
-          margin-left: 15px;
-        }
-      }
+.navbar {
+  border: none;
+  background: none;
+  .navbar-toggle {
+    background-color: $primary-color;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: $white;
+    &:hover, &:focus {
+      background-color: $primary-color;
     }
   }
-  li {
-    position: relative;
-    &:hover > ul {
-      display: block;
-      z-index: 99;
-    }
+  .navbar-nav {
+    background-color: $grey;
   }
 }
-.search-bar input[type=text] {
+.searchbar {
   margin-left: 10px;
   border: none;
-}
-.container {
-  min-width: 90vw !important;
 }
 /* Footer */
 footer {
@@ -232,11 +203,6 @@ footer {
 }
 
 /* Category - Top sales section */
-article {
-  max-width: 100%;
-  display: flex !important;
-  justify-content: space-between;
-}
 .category {
   width: 27vw;
   h1 {
@@ -250,7 +216,7 @@ article {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 300px;
+  height: 222px;
 }
 .img1 {
   background-image: url('../images/topsales/shoes.jpg');
@@ -261,29 +227,26 @@ article {
 .img3 {
   background-image: url('../images/topsales/accessories.jpg');
 }
+.image-1 {
+  padding-left:0;
+}
+.image-3 {
+  padding-right:0;
+}
 .divide-text {
   display: flex;
-  width: 50%;
+  align-items: center;
   margin: 50px auto;
   hr {
     width: 200px;
   }
+  h2 {
+    margin: 0;
+  }
 }
 /* Products section */
-.products {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .product {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 600px;
-    margin-bottom: 20px;
-    flex: 0 0 23%;
-    border: 1px solid $grey;
-  }
+.product {
+  border: 1px solid $grey;
 }
 .rating {
   color: $primary-color;
@@ -318,5 +281,49 @@ article {
   color: $bread-text-color;
   &:hover {
     color: $primary-color;
+  }
+}
+@media (min-width: 768px) {
+  .row {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+  }
+  .navbar-collapse {
+    padding: 0 !important;
+  }
+  .navbar-nav {
+    background-color: transparent !important;
+  }
+  .nav > li > a {
+    padding: 20px 35px 10px 0 !important;
+  }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #f45a40;
+  }
+  .logo {
+    background-position: left;
+  }
+  .form-control {
+    padding: 0 5px!important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    &:focus {
+      color: $primary-color;
+      border: 1px solid $primary-color !important;
+    }
+  }
+  .topsale {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

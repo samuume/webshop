@@ -2,43 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="public/assets/fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="public/assets/stylesheets/main.css">
     <title>Webshop miniproject</title>
   </head>
   <body>
     <header>
-      <section class="top">
-        <div class="flex-box">
-          <div class="logo"></div>
-          <div class="info-btns">
-            <button><i class="fa fa-phone" aria-hidden="true"></i> +45 22660077</button>
-            <button>lorem@ipsum.com</button>
-            <button>$99.54 checkout</button>
+      <section class="container">
+        <div class="row col-xs-12 nopadding">
+          <div class="logo col-xs-12 col-md-6 col-lg-5 nopadding"></div>
+          <div class="info-btns col-xs-12 col-md-10 col-lg-7 nopadding">
+            <button class="col-xs-12 col-md-7 col-lg-3"><i class="fa fa-phone" aria-hidden="true"></i> +45 22660077</button>
+            <button class="col-xs-12 col-md-8 col-lg-4"><i class="fa fa-envelope-o" aria-hidden="true"></i> lorem@ipsum.com</button>
+            <button class="col-xs-12 col-md-8 col-lg-4">$99.54 checkout</button>
           </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index">home</a></li>
-            <li><a href="#">men</a>
-              <ul>
-                <li><a href="shoes">shoes</a></li>
-                <li><a href="#">shirts</a></li>
-                <li><a href="#">pants</a></li>
-                <li><a href="#">accessories</a></li>
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span>MENU</span>
+              </button>
+            </div><!-- navbar header ends -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="index">home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">men <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="shoes">shoes</a></li>
+                    <li><a href="#">shirts</a></li>
+                    <li><a href="#">pants</a></li>
+                    <li><a href="#">accessories</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">kids</a></li>
+                <li><a href="#">sale</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">support</a></li>
+                <li><a href="#">contact</a></li>
               </ul>
-            </li>
-            <li><a href="#">women</a></li>
-            <li><a href="#">kids</a></li>
-            <li><a href="#">sale</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">support</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-          <div class="search-bar">
-            <i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="Search..." required>
-          </div>
+              <form class="navbar-form navbar-right">
+                <div class="form-group search-bar">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <input type="text" class="form-control searchbar" placeholder="Search...">
+                </div>
+              </form>
+            </div><!-- navbar-collapse -->
+          </div><!-- container fluid -->
         </nav>
       </section>
       <div class="divider"></div>
@@ -61,28 +76,29 @@
                 <!-- Set the third background image using CSS -->
             </div>
         </div>
+        <div class="slider-textbox">
+          <h1 class="slider-heading"><span>right is pink.</span><span>left is blue</span></h1>
+          <p>Inspired by NBA's bold colors and matching up to basketball's on-pitch playmakers, these kicks are ready to stand out.</p>
+          <button class="slider-btn">shop brasil</button>
+        </div><!-- Slider text ends here -->
       </div><!-- Slider ends here -->
-      <div class="slider-textbox">
-        <h1 class="slider-heading"><span>right is pink.</span><span>left is blue</span></h1>
-        <p>Inspired by NBA's bold colors and matching up to basketball's on-pitch playmakers, these kicks are ready to stand out.</p>
-        <button class="slider-btn">shop brasil</button>
-      </div><!-- Slider text ends here -->
+
     </header>
-    <main>
-      <section class="container">
+    <main class="container">
+      <section>
         <!-- top sales product description with pictures -->
-        <article class="topsales">
-          <div class="category">
+        <article class="container-fluid topsales nopadding">
+          <div class="col-xs-12 col-md-8 col-lg-4 image-1">
             <div class="category-imgs img1"></div>
             <h1><a href="#">basketball shoes</a></h1>
             <p>Loerm ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
           </div>
-          <div class="category">
+          <div class="col-xs-12 col-md-8 col-lg-4 image-2">
             <div class="category-imgs img2"></div>
             <h1><a href="#">moderne clothes</a></h1>
             <p>Loerm ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
           </div>
-          <div class="category">
+          <div class="col-xs-12 col-md-8 col-lg-4 image-3">
             <div class="category-imgs img3"></div>
             <h1><a href="#">accessories</a></h1>
             <p>Loerm ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
@@ -92,120 +108,128 @@
           <hr><h2>popular products</h2><hr>
         </div>
         <!-- products -->
-        <article class="products">
-          <div class="product">
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="product-img"></div>
-            <div class="product-des">
-              <h2>jordan aj 1 high</h2>
-              <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style. The Jordan Retro 1 has an upper that is a combination of floater and nubuck leather, which is adorned with a TPU jeweled "Air Jordan Wings" logo on the lateral side.</p>
-              <div class="flex-items">
-                <p>$ 159.99</p>
-                <div class="icons">
-                  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                  </span>
-                  </a>
+        <article class="container-fluid nopadding flexbox">
+          <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
+            <div class="product">
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="product-img"></div>
+              <div class="product-des">
+                <h2>jordan aj 1 high</h2>
+                <h4>basketball shoe</h4>
+                <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
+                <div class="flex-items">
+                  <p>$ 159.99</p>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-1x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <button class="buy-btn">buy now</button>
             </div>
-            <button class="buy-btn">buy now</button>
           </div><!-- product 1 ends here -->
-          <div class="product">
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="product-img"></div>
-            <div class="product-des">
-              <h2>jordan aj 1 high</h2>
-              <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style. The Jordan Retro 1 has an upper that is a combination of floater and nubuck leather, which is adorned with a TPU jeweled "Air Jordan Wings" logo on the lateral side.</p>
-              <div class="flex-items">
-                <p>$ 159.99</p>
-                <div class="icons">
-                  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                  </span>
-                  </a>
+          <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
+            <div class="product">
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="product-img"></div>
+              <div class="product-des">
+                <h2>jordan aj 1 high</h2>
+                <h4>basketball shoe</h4>
+                <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
+                <div class="flex-items">
+                  <p>$ 159.99</p>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-1x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <button class="buy-btn">buy now</button>
             </div>
-            <button class="buy-btn">buy now</button>
           </div><!-- product 2 ends here -->
-          <div class="product">
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="product-img"></div>
-            <div class="product-des">
-              <h2>jordan aj 1 high</h2>
-              <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style. The Jordan Retro 1 has an upper that is a combination of floater and nubuck leather, which is adorned with a TPU jeweled "Air Jordan Wings" logo on the lateral side.</p>
-              <div class="flex-items">
-                <p>$ 159.99</p>
-                <div class="icons">
-                  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                  </span>
-                  </a>
+          <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
+            <div class="product">
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="product-img"></div>
+              <div class="product-des">
+                <h2>jordan aj 1 high</h2>
+                <h4>basketball shoe</h4>
+                <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
+                <div class="flex-items">
+                  <p>$ 159.99</p>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-1x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <button class="buy-btn">buy now</button>
             </div>
-            <button class="buy-btn">buy now</button>
           </div><!-- product 3 ends here -->
-          <div class="product">
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="product-img"></div>
-            <div class="product-des">
-              <h2>jordan aj 1 high</h2>
-              <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style. The Jordan Retro 1 has an upper that is a combination of floater and nubuck leather, which is adorned with a TPU jeweled "Air Jordan Wings" logo on the lateral side.</p>
-              <div class="flex-items">
-                <p>$ 159.99</p>
-                <div class="icons">
-                  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                  </span>
-                  </a>
+          <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
+            <div class="product">
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="product-img"></div>
+              <div class="product-des">
+                <h2>jordan aj 1 high</h2>
+                <h4>basketball shoe</h4>
+                <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
+                <div class="flex-items">
+                  <p>$ 159.99</p>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-1x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <button class="buy-btn">buy now</button>
             </div>
-            <button class="buy-btn">buy now</button>
           </div><!-- product 4 ends here -->
-          <div class="product">
+          <div class="col-xs-12 col-md-4 col-lg-3 product">
             <div class="rating">
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -217,7 +241,7 @@
             <div class="product-des">
               <h2>jordan aj 1 high</h2>
               <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style. The Jordan Retro 1 has an upper that is a combination of floater and nubuck leather, which is adorned with a TPU jeweled "Air Jordan Wings" logo on the lateral side.</p>
+              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
               <div class="flex-items">
                 <p>$ 159.99</p>
                 <div class="icons">
@@ -233,7 +257,7 @@
             </div>
             <button class="buy-btn">buy now</button>
           </div><!-- product 5 ends here -->
-          <div class="product">
+          <div class="col-xs-12 col-md-4 col-lg-3 product">
             <div class="rating">
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -245,7 +269,7 @@
             <div class="product-des">
               <h2>jordan aj 1 high</h2>
               <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style. The Jordan Retro 1 has an upper that is a combination of floater and nubuck leather, which is adorned with a TPU jeweled "Air Jordan Wings" logo on the lateral side.</p>
+              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
               <div class="flex-items">
                 <p>$ 159.99</p>
                 <div class="icons">
@@ -261,7 +285,7 @@
             </div>
             <button class="buy-btn">buy now</button>
           </div><!-- product 6 ends here -->
-          <div class="product">
+          <div class="col-xs-12 col-md-4 col-lg-3 product">
             <div class="rating">
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -273,7 +297,7 @@
             <div class="product-des">
               <h2>jordan aj 1 high</h2>
               <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style. The Jordan Retro 1 has an upper that is a combination of floater and nubuck leather, which is adorned with a TPU jeweled "Air Jordan Wings" logo on the lateral side.</p>
+              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
               <div class="flex-items">
                 <p>$ 159.99</p>
                 <div class="icons">
@@ -289,7 +313,7 @@
             </div>
             <button class="buy-btn">buy now</button>
           </div><!-- product 7 ends here -->
-          <div class="product">
+          <div class="col-xs-12 col-md-4 col-lg-3 product">
             <div class="rating">
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -301,7 +325,7 @@
             <div class="product-des">
               <h2>jordan aj 1 high</h2>
               <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style. The Jordan Retro 1 has an upper that is a combination of floater and nubuck leather, which is adorned with a TPU jeweled "Air Jordan Wings" logo on the lateral side.</p>
+              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
               <div class="flex-items">
                 <p>$ 159.99</p>
                 <div class="icons">
@@ -369,7 +393,7 @@
               <li><a href="#">Refunds</a></li>
               <li><a href="#">Track Order</a></li>
               <li><a href="#">Privacy &amp; Security</a></li>
-              <li><a href="#">Carrers</a></li>
+              <li><a href="#">Careers</a></li>
               <li><a href="#">Press</a></li>
               <li><a href="#">Corporate information</a></li>
               <li><a href="#">Sizing</a></li>
@@ -389,7 +413,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
       $('#myCarousel').carousel({
-        interval: 5000,
+        interval: 8000,
         pause: "false"
       });
     </script>
