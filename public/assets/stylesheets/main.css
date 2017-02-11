@@ -120,9 +120,7 @@ header {
   .news-letter h2 {
     color: #ffffff; }
   .news-letter form {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; }
+    display: flex; }
     .news-letter form input[type=text] {
       width: 70%;
       height: 40px;
@@ -225,7 +223,8 @@ header {
   height: 250px;
   background-image: url("../images/products/shoes/jordans/jordan-aj-left.png");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .product-des {
   width: 90%;
@@ -398,7 +397,8 @@ header {
   /* Footer */
   .news-letter div {
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: nowrap; }
   .news-letter form {
     width: auto; }
     .news-letter form input[type=text] {
@@ -428,8 +428,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
-  .col-lg-3 {
-    width: 23% !important; }
   /* Contact page */
   .contact-form h1 {
     margin: 50px 0 50px 0; }

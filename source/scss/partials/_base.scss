@@ -132,8 +132,6 @@ header {
   }
   form {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
     input[type=text] {
       width: 70%;
       height: 40px;
@@ -251,6 +249,7 @@ header {
   background-image: url('../images/products/shoes/jordans/jordan-aj-left.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .product-des {
   width: 90%;
@@ -464,6 +463,7 @@ header {
     div {
       align-items: center;
       justify-content: space-between;
+      flex-wrap: nowrap;
     }
     form {
       width: auto;
@@ -506,9 +506,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  .col-lg-3 {
-    width: 23% !important
   }
   /* Contact page */
   .contact-form {
