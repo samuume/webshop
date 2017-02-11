@@ -60,8 +60,86 @@
     </header>
     <main>
       <section class="container">
-        
+        <article class="product-info">
+          <div class="product-examples col-xs-12 col-md-6 col-lg-6 nopadding">
+            <!-- Boostrap image onclick swap -->
+            <div class="large-img">
+            	<img src="public/assets/images/products/shoes/jordans/jordan-aj-left.png" title="image 1" alt="image 1" id="image1" class="image-toggle" />
+            	<img src="public/assets/images/products/shoes/jordans/jordan-aj-right.png" title="image 2" alt="image 2" id="image2" class="image-toggle" style="display:none;" />
+              <img src="public/assets/images/products/shoes/jordans/jordan-aj-back.png" title="image 3" alt="image 3" id="image3" class="image-toggle" style="display:none;" />
+            </div>
+            <div class="btn-group thumbnails" data-toggle="buttons">
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="options" id="option1">
+                <img class="thumbnail" src="public/assets/images/products/shoes/jordans/jordan-aj-left.png" alt="aj left img">
+              </label>
+              <label class="image-toggler" data-image-id="#image2">
+                <input type="radio" name="options" id="option2">
+                <img class="thumbnail" src="public/assets/images/products/shoes/jordans/jordan-aj-right.png" alt="aj right img">
+              </label>
+              <label class="image-toggler" data-image-id="#image3">
+                <input type="radio" name="options" id="option3">
+                <img class="thumbnail" src="public/assets/images/products/shoes/jordans/jordan-aj-back.png" alt="aj back img">
+              </label>
+            </div>
+          <!-- -->
+          </div>
+          <div class="product-choice col-xs-12 col-md-6 col-lg-5 nopadding">
+            <form class="" action="" method="post">
+              <h2>Product name</h2>
+              <div class="info">
+                <img src="https://logo-png.com/logos/air-jordan-logo.png" alt="Air Jordan logo">
+                <div class="price">
+                  <h1>£255</h1>
+                  <p>£300</p>
+                  <p>You save 15%</p>
+                </div>
+              </div>
+              <div class="choices">
+                <div>
+                  <label for="size">Size</label>
+                  <select name="shoesize" id="shoesize">
+                    <option>EU 41</option>
+                    <option>EU 42</option>
+                    <option>EU 43</option>
+                    <option>EU 44</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="amount">Amount</label>
+                  <input type="text" value="1" required>
+                </div>
+              </div>
+              <button class="buy-btn">buy now</button>
+            </form>
+          </div>
+        </article>
       </section><!-- container ends here -->
+      <section class="container-fluid" id="tabs">
+        <article>
+          <ul class="container tabs">
+            <li><a href="#tabs-1">Description</a></li>
+            <li><a href="#tabs-2">Shipping</a></li>
+            <li><a href="#tabs-3">Sizing</a></li>
+          </ul>
+        </article>
+        <article class="container-fluid">
+            <div class="container">
+              <div id="tabs-1" class="tab">
+                <p><span>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum ultrices dapibus. Duis facilisis arcu id ex consectetur, ac laoreet est lobortis. Nullam enim justo, fringilla a purus at, semper finibus neque. Sed tellus diam, rutrum sit amet nulla in, pretium hendrerit enim.</span><span>Integer pellentesque ante sed neque faucibus, a auctor ligula luctus. Nulla volutpat diam et neque sollicitudin, quis ullamcorper arcu commodo. Pellentesque placerat quam sit amet porttitor fermentum.</span></p>
+                <p><span>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum ultrices dapibus. Duis facilisis arcu id ex consectetur, ac laoreet est lobortis. Nullam enim justo, fringilla a purus at, semper finibus neque. Sed tellus diam, rutrum sit amet nulla in, pretium hendrerit enim.</span><span>Integer pellentesque ante sed neque faucibus, a auctor ligula luctus. Nulla volutpat diam et neque sollicitudin, quis ullamcorper arcu commodo. Pellentesque placerat quam sit amet porttitor fermentum.</span></p>
+              </div>
+              <div id="tabs-2" class="tab">
+                <p><span>Shipping Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum ultrices dapibus. Duis facilisis arcu id ex consectetur, ac laoreet est lobortis. Nullam enim justo, fringilla a purus at, semper finibus neque. Sed tellus diam, rutrum sit amet nulla in, pretium hendrerit enim.</span><span>Integer pellentesque ante sed neque faucibus, a auctor ligula luctus. Nulla volutpat diam et neque sollicitudin, quis ullamcorper arcu commodo. Pellentesque placerat quam sit amet porttitor fermentum.</span></p>
+                <p><span>Shipping Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum ultrices dapibus. Duis facilisis arcu id ex consectetur, ac laoreet est lobortis. Nullam enim justo, fringilla a purus at, semper finibus neque. Sed tellus diam, rutrum sit amet nulla in, pretium hendrerit enim.</span><span>Integer pellentesque ante sed neque faucibus, a auctor ligula luctus. Nulla volutpat diam et neque sollicitudin, quis ullamcorper arcu commodo. Pellentesque placerat quam sit amet porttitor fermentum.</span></p>
+              </div>
+              <div id="tabs-3" class="tab">
+                <p><span>Sizing Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum ultrices dapibus. Duis facilisis arcu id ex consectetur, ac laoreet est lobortis. Nullam enim justo, fringilla a purus at, semper finibus neque. Sed tellus diam, rutrum sit amet nulla in, pretium hendrerit enim.</span><span>Integer pellentesque ante sed neque faucibus, a auctor ligula luctus. Nulla volutpat diam et neque sollicitudin, quis ullamcorper arcu commodo. Pellentesque placerat quam sit amet porttitor fermentum.</span></p>
+                <p><span>Sizing Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum ultrices dapibus. Duis facilisis arcu id ex consectetur, ac laoreet est lobortis. Nullam enim justo, fringilla a purus at, semper finibus neque. Sed tellus diam, rutrum sit amet nulla in, pretium hendrerit enim.</span><span>Integer pellentesque ante sed neque faucibus, a auctor ligula luctus. Nulla volutpat diam et neque sollicitudin, quis ullamcorper arcu commodo. Pellentesque placerat quam sit amet porttitor fermentum.</span></p>
+              </div>
+            </div>
+        </article>
+      </section>
     </main>
     <footer class="footer">
       <section class="container-fluid news-letter">
@@ -129,6 +207,17 @@
       </section><!-- footer links end here -->
     </footer>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    // Product image swap
+      $('.image-toggler').click(function(){
+        $('.image-toggle').hide();
+        $($(this).attr('data-image-id')).show();
+      });
+
+      // Switch panels on button click
+      $("#tabs").tabs();
+    </script>
   </body>
 </html>
