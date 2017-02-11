@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="public/assets/stylesheets/main.css">
     <title>Webshop miniproject</title>
   </head>
-  <body>
+  <body class="wrapper">
     <header>
       <section class="container">
         <div class="row col-xs-12 nopadding">
@@ -33,7 +33,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">men <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="shoes">shoes</a></li>
+                    <li><a href="#">shoes</a></li>
                     <li><a href="#">shirts</a></li>
                     <li><a href="#">pants</a></li>
                     <li><a href="#">accessories</a></li>
@@ -44,7 +44,7 @@
                 <li><a href="#">sale</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="#">support</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="contact">contact</a></li>
               </ul>
               <form class="navbar-form navbar-right">
                 <div class="form-group search-bar">
@@ -85,7 +85,7 @@
 
     </header>
     <main class="container">
-      <section>
+      <section class="frontpage-content">
         <!-- top sales product description with pictures -->
         <article class="container-fluid topsales nopadding">
           <div class="col-xs-12 col-md-8 col-lg-4 image-1">
@@ -108,7 +108,7 @@
           <hr><h2>popular products</h2><hr>
         </div>
         <!-- products -->
-        <article class="container-fluid nopadding flexbox">
+        <article class="nopadding flexbox">
           <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
             <div class="product">
               <div class="rating">
@@ -136,7 +136,7 @@
                   </div>
                 </div>
               </div>
-              <button class="buy-btn">buy now</button>
+              <button class="buy-btn" onclick="window.location.href='/webshop/detail'">buy now</button>
             </div>
           </div><!-- product 1 ends here -->
           <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
@@ -229,134 +229,142 @@
               <button class="buy-btn">buy now</button>
             </div>
           </div><!-- product 4 ends here -->
-          <div class="col-xs-12 col-md-4 col-lg-3 product">
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="product-img"></div>
-            <div class="product-des">
-              <h2>jordan aj 1 high</h2>
-              <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
-              <div class="flex-items">
-                <p>$ 159.99</p>
-                <div class="icons">
-                  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                  </span>
-                  </a>
+          <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
+            <div class="product">
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="product-img"></div>
+              <div class="product-des">
+                <h2>jordan aj 1 high</h2>
+                <h4>basketball shoe</h4>
+                <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
+                <div class="flex-items">
+                  <p>$ 159.99</p>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-1x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <button class="buy-btn">buy now</button>
             </div>
-            <button class="buy-btn">buy now</button>
           </div><!-- product 5 ends here -->
-          <div class="col-xs-12 col-md-4 col-lg-3 product">
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="product-img"></div>
-            <div class="product-des">
-              <h2>jordan aj 1 high</h2>
-              <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
-              <div class="flex-items">
-                <p>$ 159.99</p>
-                <div class="icons">
-                  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                  </span>
-                  </a>
+          <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
+            <div class="product">
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="product-img"></div>
+              <div class="product-des">
+                <h2>jordan aj 1 high</h2>
+                <h4>basketball shoe</h4>
+                <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
+                <div class="flex-items">
+                  <p>$ 159.99</p>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-1x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <button class="buy-btn">buy now</button>
             </div>
-            <button class="buy-btn">buy now</button>
           </div><!-- product 6 ends here -->
-          <div class="col-xs-12 col-md-4 col-lg-3 product">
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="product-img"></div>
-            <div class="product-des">
-              <h2>jordan aj 1 high</h2>
-              <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
-              <div class="flex-items">
-                <p>$ 159.99</p>
-                <div class="icons">
-                  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                  </span>
-                  </a>
+          <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
+            <div class="product">
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="product-img"></div>
+              <div class="product-des">
+                <h2>jordan aj 1 high</h2>
+                <h4>basketball shoe</h4>
+                <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
+                <div class="flex-items">
+                  <p>$ 159.99</p>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-1x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <button class="buy-btn">buy now</button>
             </div>
-            <button class="buy-btn">buy now</button>
           </div><!-- product 7 ends here -->
-          <div class="col-xs-12 col-md-4 col-lg-3 product">
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="product-img"></div>
-            <div class="product-des">
-              <h2>jordan aj 1 high</h2>
-              <h4>basketball shoe</h4>
-              <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
-              <div class="flex-items">
-                <p>$ 159.99</p>
-                <div class="icons">
-                  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                  </span>
-                  </a>
+          <div class="col-xs-12 col-md-4 col-lg-3 nopadding">
+            <div class="product">
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="product-img"></div>
+              <div class="product-des">
+                <h2>jordan aj 1 high</h2>
+                <h4>basketball shoe</h4>
+                <p>This is how it all started in 1985. If you are a Jordan enthusiast, you won't be able to go without this hip new twist on a classic style...</p>
+                <div class="flex-items">
+                  <p>$ 159.99</p>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-1x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <button class="buy-btn">buy now</button>
             </div>
-            <button class="buy-btn">buy now</button>
           </div><!-- product 8 ends here -->
         </article><!-- products end here -->
       </section><!-- container ends here -->
     </main>
-    <footer>
-      <section class="news-letter">
-        <div><!-- flexbox -->
-          <h2>sign up for exclusive sales and product news</h2>
-          <form class="signup-form" method="post" action="">
+    <footer class="footer">
+      <section class="container-fluid news-letter">
+        <div class="container"><!-- flexbox -->
+          <h2 class="col-lg-8">sign up for exclusive sales and product news</h2>
+          <form class="signup-form col-lg-3" method="post" action="">
              <input type="text" placeholder="YOUREMAIL@EMAIL.COM" required>
              <input type="submit" value="SIGN UP">
           </form>
         </div>
       </section><!-- news letter form ends here -->
       <section class="footer-links">
-        <div class="footer-flexbox">
-          <div class="footer-col">
+        <div class="container">
+          <div class="col-xs-12 col-md-5 col-lg-4">
             <h2>our stores</h2>
             <p>Feel free to visit our stores or contact us</p>
             <p>
@@ -373,7 +381,7 @@
               <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
             </div><!-- social media end here -->
           </div><!-- col 1 ends here -->
-          <div class="footer-col">
+          <div class="col-xs-12 col-md-5 col-lg-4">
             <h2>blog posts</h2>
             <p>
               <h5>Title here</h5>
@@ -384,7 +392,7 @@
               <span>Loerm ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</span>
             </p>
           </div><!-- col 2 ends here -->
-          <div class="footer-col">
+          <div class="col-xs-12 col-md-5 col-lg-4">
             <h2>support</h2>
             <ul>
               <li><a href="#">Terms &amp; Conditions</a></li>
