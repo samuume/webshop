@@ -23,6 +23,10 @@ stylesheets/
   min-height: 100vh;
   flex-direction: column; }
 
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 main {
   max-width: 100%;
   height: auto;
@@ -64,12 +68,6 @@ header {
 .row {
   z-index: 1;
   margin: 10px 0; }
-
-.container-fluid {
-  padding: 0; }
-
-.nopadding {
-  padding: 0 !important; }
 
 .logo {
   height: 30px;
@@ -357,15 +355,21 @@ header {
 
 @media (min-width: 768px) {
   /* Global */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
   .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 11vh;
-    margin-bottom: 0 !important;
-    border-bottom: 1px solid #2a2d34; }
-  .nopadding {
-    margin-bottom: 30px; }
+    margin-bottom: 0 !important; }
+  .line {
+    border-top: 1px solid #2a2d34;
+    height: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex; }
   .navbar-collapse {
     padding: 0 !important; }
   .navbar-nav {
@@ -454,17 +458,15 @@ header {
   .product-info {
     display: flex;
     justify-content: space-between; }
-  .product-examples {
-    padding-right: 3% !important; }
-    .product-examples label > input[type=radio]:checked + .thumbnail {
-      border: 1px solid #f45a40 !important; }
-    .product-examples .large-img {
-      height: 500px;
-      border: 1px solid #ededed;
-      margin-bottom: 20px; }
-    .product-examples .thumbnails .thumbnail {
-      width: 170px;
-      border-radius: 0; }
+  .product-examples label > input[type=radio]:checked + .thumbnail {
+    border: 1px solid #f45a40 !important; }
+  .product-examples .large-img {
+    height: 500px;
+    border: 1px solid #ededed;
+    margin-bottom: 20px; }
+  .product-examples .thumbnails .thumbnail {
+    width: 170px;
+    border-radius: 0; }
   .product-choice h2 {
     color: #808080; }
   .product-choice .info, .product-choice .choices {
@@ -690,6 +692,7 @@ button {
       border-top: 10px solid #f45a40;
       padding-top: 11px; }
   .tab {
-    justify-content: space-between; }
+    flex-direction: row; }
     .tab p {
-      width: 48%; } }
+      width: 48%;
+      margin-right: 20px; } }

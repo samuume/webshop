@@ -27,6 +27,10 @@ $grey: #ededed;
   min-height: 100vh;
   flex-direction: column;
 }
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 main {
   max-width: 100%;
   height: auto;
@@ -69,12 +73,6 @@ header {
 .row {
   z-index: 1;
   margin: 10px 0;
-}
-.container-fluid {
-  padding: 0;
-}
-.nopadding {
-  padding: 0 !important;
 }
 .logo {
   height: 30px;
@@ -409,16 +407,23 @@ header {
 
 @media (min-width: 768px) {
   /* Global */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
   .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 11vh;
     margin-bottom: 0 !important;
-    border-bottom: 1px solid $secondary-color;
   }
-  .nopadding {
-    margin-bottom: 30px;
+  .line {
+    border-top: 1px solid $secondary-color;
+    height:0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
   }
   .navbar-collapse {
     padding: 0 !important;
@@ -545,7 +550,6 @@ header {
     justify-content: space-between;
   }
   .product-examples {
-    padding-right: 3% !important;
     label > input[type=radio]:checked + .thumbnail {
       border: 1px solid $primary-color !important;
     }

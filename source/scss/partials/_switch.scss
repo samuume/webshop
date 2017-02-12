@@ -48,9 +48,10 @@
     }
   }
   .tab {
-    justify-content: space-between;
+    flex-direction: row;
     p {
       width: 48%;
+      margin-right: 20px;
     }
   }
 }
