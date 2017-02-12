@@ -183,20 +183,9 @@ header {
 .topsales {
   width: 100%; }
 
-.category-imgs {
-  background-size: cover;
-  background-position: center;
+.cate-img {
   max-width: 100%;
-  height: 222px; }
-
-.img1 {
-  background-image: url("../images/topsales/shoes.jpg"); }
-
-.img2 {
-  background-image: url("../images/topsales/modern-clothes.jpg"); }
-
-.img3 {
-  background-image: url("../images/topsales/accessories.jpg"); }
+  height: 180px; }
 
 .divide-text {
   display: flex;
@@ -378,7 +367,7 @@ header {
     padding: 25px 35px 10px 0 !important; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: underline !important;
     text-decoration-color: #f45a40; }
   .logo {
     background-position: left; }
@@ -424,10 +413,12 @@ header {
   .topsales {
     display: flex !important;
     justify-content: space-between; }
-  .image-1 {
+  .cate-images:first-child {
     padding-left: 0; }
-  .image-3 {
+  .cate-images:last-child {
     padding-right: 0; }
+  .cate-images .cate-img {
+    height: 222px; }
   .flexbox {
     display: flex;
     justify-content: space-between;
@@ -525,7 +516,8 @@ body {
   color: #808080; }
 
 a {
-  color: inherit; }
+  color: inherit;
+  text-decoration: none; }
   a:focus {
     outline: none;
     color: inherit; }
@@ -572,9 +564,23 @@ button {
   width: 145px;
   height: 40px; }
 
-.cta-btn {
+.cta-btn span {
   width: 100%;
-  height: 40px; }
+  height: 40px;
+  background-color: #f45a40;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cta-btn span:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #db2a0d; }
+
+.cta-btn:hover {
+  text-decoration: none; }
+
+.cta-btn:focus {
+  outline: none; }
 
 .buy-btn {
   width: 100%;
@@ -654,7 +660,8 @@ button {
 /* Switch panels on button click styles */
 .tabs {
   display: flex;
-  list-style: none; }
+  list-style: none;
+  padding-left: 1px; }
   .tabs li {
     margin-right: 2%; }
   .tabs a {
@@ -681,16 +688,18 @@ button {
       margin-bottom: 20px; }
 
 @media (min-width: 768px) {
-  .tabs li {
-    margin-right: 5%; }
-  .tabs a {
-    font-size: 1.2em;
-    width: 150px;
-    height: 40px;
-    padding: 20px 0 20px 0; }
-    .tabs a:hover {
-      border-top: 10px solid #f45a40;
-      padding-top: 11px; }
+  .tabs {
+    padding-left: 0 !important; }
+    .tabs li {
+      margin-right: 5%; }
+    .tabs a {
+      font-size: 1.2em;
+      width: 150px;
+      height: 40px;
+      padding: 20px 0 20px 0; }
+      .tabs a:hover {
+        border-top: 10px solid #f45a40;
+        padding-top: 11px; }
   .tab {
     flex-direction: row; }
     .tab p {

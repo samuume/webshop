@@ -2,6 +2,7 @@
 .tabs {
   display: flex;
   list-style: none;
+  padding-left: 1px;
   li {
     margin-right: 2%;
   }
@@ -33,6 +34,7 @@
 }
 @media (min-width: 768px) {
   .tabs {
+    padding-left: 0 !important;
     li {
       margin-right: 5%;
     }
